@@ -5023,7 +5023,9 @@ export class AppComponent implements OnInit {
       JsBarcode("#barcode", val);
     })
 
-    this.createBarCode();
+    setInterval(() => {
+      this.createBarCode();
+    }, 1000)
 
   }
 
