@@ -7092,10 +7092,6 @@ export class AppComponent implements OnInit {
       JsBarcode("#barcode", val);
     })
 
-    setInterval(() => {
-      this.createBarCode();
-    }, 1000)
-
   }
 
   randomNumber(minimum: number, maximum: number) {
