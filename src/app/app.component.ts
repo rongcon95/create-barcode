@@ -5654,13 +5654,13 @@ export class AppComponent implements OnInit {
     "0192877373964",
     "8025272632058",
     "8938520672013",
-    "1885000649572",5
+    "1885000649572",
     "0685193156934",
     "9555051101806",
     "6923615532794",
     "4983608156934",
     "8002477179458",
-    "1490243061538",6
+    "1490243061538",
     "8801353005610",
     "9786045370193",
     "6941055605823",
@@ -7099,7 +7099,7 @@ export class AppComponent implements OnInit {
   }
 
   createBarCode() {
-    JsBarcode("#barcode", this.barcodes[this.randomNumber(0, this.barcodes.length)]);
+    JsBarcode("#barcode", <string>this.barcodes[this.randomNumber(0, this.barcodes.length)]);
   }
 
 
